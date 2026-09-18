@@ -1,0 +1,694 @@
+{
+  "devspec_version": "0.2.0",
+  "files": [
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/rules/devspec-workflow.md",
+      "sha256": "a952bddf467963d2350404dfeba7b9f2d1a8bf1931d2192f81390fe9228777ed"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-changerequest.md",
+      "sha256": "3a1c6542a57b81bbd910db82ba65ec46c8752bf29297d2730747d67832b16c57"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-clarify.md",
+      "sha256": "658fe49707ea48342501e40d5db886bb7c5d8b4f3b93f9e95be54159f721473b"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-codebase-structure.md",
+      "sha256": "fd93d4240a2aebec336ae2cabf018c36046da8bc4653308762bf4202b485a098"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-coding-standards.md",
+      "sha256": "52275bab3d32d9611fd43eec6a4b218ae75c294ae873bf0863f53fe5c3abb596"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-diagram.md",
+      "sha256": "65d8f571f96fe1f7426e94563502c7cdf94968c78cc1330c1699edea5930b295"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-extract.md",
+      "sha256": "1efd44144dfbd9cd1102863786b56cead49a043fff00668ead75e8ef1f8cbffc"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-finalize.md",
+      "sha256": "a7be1de07fdc09478081baa72211d8380d1f6640dc5065c92f42628f241967ff"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-implement.md",
+      "sha256": "43b629518c48d48429f3ae7b984a55a2f5105c79e73468874048bb73b39ae934"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-projectcontext.md",
+      "sha256": "9c5bd59d9942f706bf681d1e598f68ead1d67a514453ce1d439930154355fecc"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-review.md",
+      "sha256": "b6c5698089364e77b8010d0fcead3ad5a30a339a70bbba8cdefa30ef0314d32e"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-rules.md",
+      "sha256": "775f19831765954e47e75d02f7db55edd45f47f0c56b42e4fa194eb9887bd63a"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-story.md",
+      "sha256": "bfc2fda31e3deff228c748081d27eeda10dfb3088cb4cb71a3fabd1960e58e71"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-tasks.md",
+      "sha256": "d78382a6e5efc6f90c5918947455586951f441125edd2e951ae643e1b6970148"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".agents/skills/devspec-techstack.md",
+      "sha256": "79d33abebcc91f9307c1d94db013471c1f360d44d349772b9daf7ee15f682dfb"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-changerequest/SKILL.md",
+      "sha256": "5c575f1b9727ca9bc3af91dea9b6002d054c9597d9f98c858f009bc2533f3517"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-clarify/SKILL.md",
+      "sha256": "ce1a035645384a3706bc294dad8de56da19f6ec4b7e6b7e9a1e8f152b12bf63e"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-codebase-structure/SKILL.md",
+      "sha256": "dfdeec12f492d8662db9fb58b03b16af100562efce18da93a20ee2b059c9b8b4"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-coding-standards/SKILL.md",
+      "sha256": "9ada76356ea9a0da1b322cb7cd4d8ab3545c3e90860aae88beb236975231448b"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-diagram/SKILL.md",
+      "sha256": "fff3603744ce23f38076ca30619475dcbed27468883b5c46fe5feaf1fbaabee1"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-extract/SKILL.md",
+      "sha256": "abbc0a5b518ce5c2ab18b5f932ff56da57b151951ee190287f34c0f97af340f7"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-finalize/SKILL.md",
+      "sha256": "f1c318cbdf3e1d89b5d7f238a974b63bcfccb0e000a9d1c85841b5c17589f8c4"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-implement/SKILL.md",
+      "sha256": "649f4753db0840446949891824acd9491c57447e878b43cb710ec813767ac9f7"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-projectcontext/SKILL.md",
+      "sha256": "b826d1d408865c2798546fbccb3521bf71ecf8ffb27ea65aa276eadcc2d1cf2b"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-review/SKILL.md",
+      "sha256": "e229a8870a17da81f5274125b49937e7619cbfe235eee75c3e1e7b9b62d90047"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-rules/SKILL.md",
+      "sha256": "ffbfd99e1404e94de1339b10c0afcbef6207303f67fbcc742160d7f39e6f8117"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-story/SKILL.md",
+      "sha256": "da8fcd1f8537de1c13c1c3578c7eae1e851da35b15cc0555c53a1de43a8942a8"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-tasks/SKILL.md",
+      "sha256": "3050a60fb131ceb6efa19fe634cab73830d9ae8a00560641cf4f0d02218ac410"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".claude/skills/devspec-techstack/SKILL.md",
+      "sha256": "70f6719c6855d700945e1de4fd012a3d2600f21dba8d149adecdd47bf4957f1a"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".cursor/rules/devspec-workflow.mdc",
+      "sha256": "921274733d699499f87f25911532fd85d7468f176e86db313fa20bc48b88b176"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/changerequest.toml",
+      "sha256": "105b0ceb58462dde1b803be0e7824be29c94e382928de444fd2d2d2092b4bb3b"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/clarify.toml",
+      "sha256": "684d1c1dcf7953c927e27a527cfcd2d8a2636783cc7cf3ae7790574f12feeaff"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/codebase-structure.toml",
+      "sha256": "95c549321b66b23abe721fbfffa8819bf1ab1a9a697bb84ce2f37d0cbeee801c"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/coding-standards.toml",
+      "sha256": "cc0f85e695f65bc29fb79a3ba677fd8bd88802bc2cb8da59b88cafd853009384"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/diagram.toml",
+      "sha256": "8542978346d95fad43f77cc18be9201ab4bbdf416711e02f848fc456cce622f4"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/extract.toml",
+      "sha256": "b6967a0464cb9c0c42a7063065a3b79549a69725ac8c395eb1eb5b7762a44db6"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/finalize.toml",
+      "sha256": "185e64840faa9dba45f7153d57fe11acaae93327d66627a993c962d44440b432"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/implement.toml",
+      "sha256": "5557f73b9b2a8ce65beec427ee29c48b5ac1ee6e3edc394e1b198262d6901457"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/projectcontext.toml",
+      "sha256": "1571696d1ac43743069ca8ac0b35611a089107bc3db5edee1821e7f7c15b1051"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/review.toml",
+      "sha256": "3aefa75212dc16260305d36bae76f95dd1a85ec3561d0108835bd0c31cff7f88"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/rules.toml",
+      "sha256": "bd7bffa107bea7185a950be63bc91d40b2390ed73389a8102ad53c91edab1f4a"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/story.toml",
+      "sha256": "f29fa90f6252bb9ac2b09360dea721a020488f47fd1b68e99c2cd1665090240f"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/tasks.toml",
+      "sha256": "b852a0846936bbdd887aa1183129b317a6c2cf377c9e7f3c607da70a7b120b2d"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".gemini/commands/devspec/techstack.toml",
+      "sha256": "f8991f48344ac53036886d46387873ebf5fe553d26d7887eedbc8f170525887a"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.changerequest.agent.md",
+      "sha256": "933ae22950fcb7353ec2a080d2cf1d111ce171f37a793c470ee9a5f40bcaf46e"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.clarify.agent.md",
+      "sha256": "add58260ee47c08841731bd8135886b208f23c65dfea4e293929f9d5a0d0d2e3"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.codebase-structure.agent.md",
+      "sha256": "01303ee4d5347404ffb2b820636328c54b0f4507e90f4a989a31afd39f55eef5"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.coding-standards.agent.md",
+      "sha256": "8bfdc405865e31fca707057c6454b5cf6f0c4e06559f2499bb4733f24508cbbf"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.diagram.agent.md",
+      "sha256": "bd56ba8f5bdebfc5328d0b31e6b19254a1bd4f2cafad2df728f759d802adac16"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.extract.agent.md",
+      "sha256": "1ab9e6e5adb65c18f2d85e344accbe5bd273137fc5a57ec4e9775be975c1b2e0"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.finalize.agent.md",
+      "sha256": "c93047286fc7510f3ae65b8d52b84b674eaff8921be557920c90dd081e2017c4"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.implement-task.agent.md",
+      "sha256": "28b3bf627e1422a3d2741da23a4fc7452fb529a4115bdeeaa983b14396386a4e"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.projectcontext.agent.md",
+      "sha256": "02694519c0b0b130236d34fed57f1d684d4cee5daf05dd5098cab8b69abe6ceb"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.review.agent.md",
+      "sha256": "8d7d4ac6f88e215bd645fe7a606c74246882f1ec6edd2373c2a315b77a37786f"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.rules.agent.md",
+      "sha256": "a79d684704d09842ce2967a112de086af81217f47b3a38c0c3e9e6f4092af9c5"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.story.agent.md",
+      "sha256": "5bd424b8baa5a16ae0070e3fb6c18e7533a3743b01410c35ccea5a212b175409"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.tasks.agent.md",
+      "sha256": "8fae8bf101a4015e4e03e62a645c87e0c19714f721755224ada7559e935c151e"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/agents/devspec.techstack.agent.md",
+      "sha256": "a2b1ee14ca867f8c2e8c4305a1ed27e9928ba72850a862a2ff5b76ba5a38808d"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/PATTERNS.md",
+      "sha256": "d71991069c5bc96145cb0735a12c7b5c526c1aa638113e6da371e8b5c679ace7"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/README.md",
+      "sha256": "1bdf7bdad5e33e5ed31ac7503b49653c6b8daf1bbf439663efcaa00df4b69d16"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.changerequest.prompt.md",
+      "sha256": "a03a6764f34d4415b42a876bc9330c3d9b4abc416cf3808dba24cb9a24f91467"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.clarify.prompt.md",
+      "sha256": "54cd5725dafdb9f01db7069a5617e99105fdb187520637d171c4229929b14159"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.codebase-structure.prompt.md",
+      "sha256": "e9c6d36aca0a37e09ce38952f97ac2bbd9f6615cf4318a67927c9a2655a83f5d"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.coding-standards.prompt.md",
+      "sha256": "80a9620fcddd3cfd38591b04670be553ee58f163b4e135b42c6f8bd991307184"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.diagram.prompt.md",
+      "sha256": "b52e63bbdcd411bdad77eab71e5fc2f32cde5c8af7b60d110bc267524c04a2c6"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.extract.prompt.md",
+      "sha256": "418e1068a9a359c67990edd9b505ed59f86611855ee17b404e9a275b2e2a99a4"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.finalize.prompt.md",
+      "sha256": "83c1f2e3c4fa6d38303b23528e8987164d1b36c1feb9c808ea3d1ce3e885c4ec"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.implement.prompt.md",
+      "sha256": "88de02f59b49f669cff077a21df3a280bc9df999a7f1a7ff6c19197a0f314b48"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.projectcontext.prompt.md",
+      "sha256": "fde1f5187b91284ef81467b65cec1466dad079b9a6ca352e527defd123fc2234"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.review.prompt.md",
+      "sha256": "dc9e717ddb470fe5dfa8ee5413f89bbfff80d0ebfc9f7b4919c4e432f8d7a9ba"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.rules.prompt.md",
+      "sha256": "201444ee8a327a650fcd8466b4fbc4763024fdaf177ddf9a6d406606d594e545"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.story.prompt.md",
+      "sha256": "da23a61c937e936b338a9c78a73a9f347193acb69a4226fb67b2c4c0ad491710"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.tasks.prompt.md",
+      "sha256": "c4446717830d8a5672133e1510ab53d3727109347f2f0eb8b6bb6564e49d4cd6"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/prompts/devspec.techstack.prompt.md",
+      "sha256": "d40b9fcf24f3f0b0ef63d04d0f1a7a60963b7a9121266a8398581e4ef5bd39c9"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": ".github/skills/exploration-recovery/SKILL.md",
+      "sha256": "5155e90d50a1a2f2a9b30d72f2b139fd3b0f82dd3e82ef3207a19661eac97020"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "AGENTS.md",
+      "sha256": "6ea1ccce46be08c6d82d1e03c0175ab5570eeb5bda2abcbc43b7128a10793c06"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "GEMINI.md",
+      "sha256": "1e776f0abcda2c98e0d5e18829c67a55d4abc26270c93065afef48f2adbfc1cc"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/README.md",
+      "sha256": "0775b23ca04ff37f8bfbc2f10bc5c57df60c6bd35be8aec8532734f00c75de14"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/antigravity.md",
+      "sha256": "684919dd0d8d61ee5be3d019d170e74f3c4608d92d34d5fe9dd50fbacae3515b"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/claude-code.md",
+      "sha256": "eda749293a52e3b4fa17135685321774124a88a2f1cf2367165f075bc2baab4d"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/codex-skills/devspec-workflow/SKILL.md",
+      "sha256": "e3b536459238eb8ab451774fbee5435319b67aae9589e7fbdf0dfe3be29606f3"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/codex.md",
+      "sha256": "7b669a6830064caaa778bfbceca59a318a9d8fa57879d94727a67552dbb38417"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/command-registry.md",
+      "sha256": "50b1a82ef466545253deed57da85eb7c6479278b1f6bc532b56cad62034b4315"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/compatibility-matrix.md",
+      "sha256": "b8c1aa05cb3cf7e34552383e8159d9644aa9c94dff6052609664c3c533f5041b"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/copilot.md",
+      "sha256": "d82eb510c4a66c36413f92cda1908d4357e320d928522f8b021bb3090035c0e3"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/cursor.md",
+      "sha256": "15369ce9954f7cd86d7e42f2684615b2714f6e0d9947d6fb94d78dda5612a97b"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/enterprise-governance.md",
+      "sha256": "8cfd54872af59cdda8b33789344719a8e45a5beced2fc72eb9ce8324fa32668d"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/gemini-cli.md",
+      "sha256": "e9074cc3fb758d4063c4e05adc6102f2f0499049f85812d0eafc78cf8f45948c"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/adapters/validation-flows.md",
+      "sha256": "e9497a5fee82551db636120edb3ae04d1fa1633089e5a6030c860df0991e55af"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/architecture-diagram.svg",
+      "sha256": "5c7df2de9465998e8de3da991ba7c2cb48f6082e5cb2ae05cdd7a1e9c60375ce"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/artifact-queue.md",
+      "sha256": "cc92816a42f0b2e4ff862c8d1bd501e5278b005d1cc18622f6f0e66b9ccd6548"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/decision.md",
+      "sha256": "c6bff37127676422e6ec87beb2b17414e3949a6952e83a16cfa5b6f40d186c88"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/diagram.html",
+      "sha256": "36e245d1273dcf338b13c1a787102e340d398652f7d3ff675f677be5fdea5db2"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/diagram.md",
+      "sha256": "d9df992c4a36fc38f63ec078f0175f055741408bb465448460b03d7a696e54be"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/domain-model-diagram.svg",
+      "sha256": "c678ef754d0cbdb9834ec7c8cbfab7a6711447d51e11fc8ebb1d8ab045efa3c8"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/journey-map-diagram.svg",
+      "sha256": "44e8e8a25e2933c413970fc30fef5676c170b5455ccf232bf94880693b1a10c0"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/mindmap-diagram.svg",
+      "sha256": "78743cc41710874a9de80766f4b8eeb5605a086c2298cc00b2896fab516f21b5"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/overview.md",
+      "sha256": "8b361381c137ef1e712ea092ae09c7b618af5dd349117309f27e153d4f9cafc5"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/process-flow-diagram.svg",
+      "sha256": "e2513817c744ba5ac6dddcc10a8f52277b0086e6265c4c3841d1d52f77710025"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/quadrant-analysis-diagram.svg",
+      "sha256": "cb55b0bcf6f4af89c75f6c57e130782411a390b5552ec02d99e1d4a3924bebc1"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/sequence-diagram.svg",
+      "sha256": "caf2bec9db69ac4f87e6438ec6db29d75de2571730e926d3de2692853e1b0ef3"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/state-lifecycle-diagram.svg",
+      "sha256": "efbaaabae5419751568e10e33f4cb3dd44c017686ddd99f39b4ae3dcbc99819b"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/_template/timeline-plan-diagram.svg",
+      "sha256": "e0427ec0275ccd0dbf44d2537d6df5619c8954950e889029f146b6bdc2e32bfd"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/architecture/artifact-queue.md",
+      "sha256": "cc92816a42f0b2e4ff862c8d1bd501e5278b005d1cc18622f6f0e66b9ccd6548"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/architecture/diagrams/README.md",
+      "sha256": "56d52fc02451fd9bd65a5c00fbfb4fb6e1b0cb2a9134737b23f68c192f35287f"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/html/README.md",
+      "sha256": "c79f03cbddc8ca1ceb803473440e6795d19ae4614eb48562f81c25670ec61780"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/architecture/images/README.md",
+      "sha256": "809c79630d327aa66e63d46978c06a654b534e4cee8308436507a1cddf8bcf22"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/architecture/overview.md",
+      "sha256": "8b361381c137ef1e712ea092ae09c7b618af5dd349117309f27e153d4f9cafc5"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/constitution.md",
+      "sha256": "74ee00d4c34dc66df0ec00fa0c9410ca4712f28c591bb92f0689ef916804a204"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/codebase-structure.md",
+      "sha256": "fb570a435652dcea958a845a33fc26c7b65c75912fd343901df5f34d9c3e09a3"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/coding-standards.md",
+      "sha256": "db0962286f49424a7c7e6bd8443239ab845bb27ed250e6bd27dd20d1ddbff8f8"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/discovery-exclusions.md",
+      "sha256": "00ec76b97eaac9cd0059830beddc75501eac6a752e86661a86d6f3b9138b5b6e"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/exploration-state.md",
+      "sha256": "1cf383bb12e72674b9f2575edc91c2ec3bf94e761ec20845f8340098c036fd88"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/extraction-state.md",
+      "sha256": "279c4c45ed50b9bbb947011899d2d6a2ce80ab4746d1e145dfd98850a1a5fa19"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/project-context.md",
+      "sha256": "22b06d2aa8440cd0216586628c8e9edda4e55df35720928fa08bc9d284d646e9"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/provider-integrations.md",
+      "sha256": "a6a539fbfb8414f210e36306324ca0696dc3ef4ad0b450e9166df3be88ca6015"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/rules.md",
+      "sha256": "394f89e246f7a794c48cfa98818e4ff8b73a159e8b00666faf8b601f44d408e6"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/foundation/_template/tech-stack.md",
+      "sha256": "ff45e8f117ca8ff686a8f28eb8637ec0dd6ccfe4cb75768eb120ba333079c559"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/foundation/codebase-structure.md",
+      "sha256": "fb570a435652dcea958a845a33fc26c7b65c75912fd343901df5f34d9c3e09a3"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/foundation/coding-standards.md",
+      "sha256": "db0962286f49424a7c7e6bd8443239ab845bb27ed250e6bd27dd20d1ddbff8f8"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/foundation/discovery-exclusions.md",
+      "sha256": "00ec76b97eaac9cd0059830beddc75501eac6a752e86661a86d6f3b9138b5b6e"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/foundation/extraction-state.md",
+      "sha256": "7bc74b0ec7b76e49b9fdde799516a2c4b2073c559cf14ce1866ba8c3df5cc6ab"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/foundation/project-context.md",
+      "sha256": "e229add8da57f68e67409524dff1c57acdd22c1090bb4d80a1004c416c6f4086"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/foundation/provider-integrations.md",
+      "sha256": "a6a539fbfb8414f210e36306324ca0696dc3ef4ad0b450e9166df3be88ca6015"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/foundation/rules.md",
+      "sha256": "63b6c2cdfae78820ab6a56e1d95e1ebd762526adfa59d6403e1ff0452f91728a"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/foundation/tech-stack.md",
+      "sha256": "ff45e8f117ca8ff686a8f28eb8637ec0dd6ccfe4cb75768eb120ba333079c559"
+    },
+    {
+      "ownership": "project-owned",
+      "path": "devspec/glossary.md",
+      "sha256": "1f364de77800a4464250c66363d3dddf5c221ae8d1c01bf4131d04f907f48d33"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/clarify.md",
+      "sha256": "ff240d71c3a7ffdf83d346765c10a476934411f8ae7fffdd65fd85ecc52935e2"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/decisions.md",
+      "sha256": "420a8c98c6ce3ad82dbb2bd6c4ee57050f6f4d5c4e4056f92e73f6c2dfddcdf7"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/diagrams.md",
+      "sha256": "911aa13def14269d95eb54cdd34ed471d26ea8c5a5a7e415da916624904bdfc2"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/finalize.md",
+      "sha256": "41ccbbfe3577fb841acf5a2f61e5b6fa33cd2f4eaf542adabdc9888d83dfc6a4"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/implement.md",
+      "sha256": "d7b0a77f8cad0ce5ba3c2c0bcbf4cc47f1c1c4f9c65a0c8c880cfaf298e9d94c"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/meta.md",
+      "sha256": "960216df8e2a7b5e6a916e3b2f454f3af62c9e9decec3deedc3cca437cb4fba5"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/notes.md",
+      "sha256": "47fe571d3bee5a7050d4ce790ceb79823b2e3ad697a6b137acac9732d238aed3"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/review.md",
+      "sha256": "a632f8d6c339e1c4d36eed224b6032c9c40973660c256f63ac9cb6b2d2f34959"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/story.md",
+      "sha256": "3d17a987e084dda0e099a99b0c54a1440ad7c50460cdbb52c23900a73ab5ab71"
+    },
+    {
+      "ownership": "framework-owned",
+      "path": "devspec/work-items/_template/tasks.md",
+      "sha256": "0046d2ee882796d273bdd9abe927023a913502be8c1804b575b07d8dc88cfa69"
+    }
+  ],
+  "installed_at": "2026-09-18T13:42:48+00:00",
+  "profile": "all",
+  "repo_state": "existing",
+  "schema_version": 1
+}
