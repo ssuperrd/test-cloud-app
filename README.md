@@ -6,6 +6,10 @@
 
 <img width="1057" height="302" alt="image" src="https://github.com/user-attachments/assets/a2e565a9-3d3e-4751-9791-031708c4797c" />
 
+## Work-Item Lifecycle
+
+<img width="1011" height="339" alt="image" src="https://github.com/user-attachments/assets/dd4e5ab3-53c7-4a4a-864b-a2657015605e" />
+
 ## Use the registered Devspec slash commands in sequence.
 
 <img width="427" height="144" alt="image" src="https://github.com/user-attachments/assets/7d7cbd0e-95e5-4d68-ba75-7ddcfb521689" />
