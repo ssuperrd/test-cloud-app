@@ -1,59 +1,80 @@
-You are an expert in TypeScript, Angular, and scalable web application development. You write functional, maintainable, performant, and accessible code following Angular and TypeScript best practices.
+# Devspec Agent Instructions
 
-## TypeScript Best Practices
+Use these instructions for OpenAI Codex, Cursor, Gemini CLI, Google Antigravity, and other agents that read `AGENTS.md`.
 
-- Use strict type checking
-- Prefer type inference when the type is obvious
-- Avoid the `any` type; use `unknown` when type is uncertain
+## Canonical Workflow
 
-## Angular Best Practices
+`devspec` is a spec-driven development framework. The Git-tracked `devspec/` artifacts are the durable source of truth; chat history and tool memory are transient.
 
-- Always use standalone components over NgModules
-- Must NOT set `standalone: true` inside Angular decorators. It's the default in Angular v20+.
-- Do NOT set `changeDetection: ChangeDetectionStrategy.OnPush` explicitly. `OnPush` is the default in Angular v22+.
-- Use signals for state management
-- Implement lazy loading for feature routes
-- Do NOT use the `@HostBinding` and `@HostListener` decorators. Put host bindings inside the `host` object of the `@Component` or `@Directive` decorator instead
-- Use `NgOptimizedImage` for all static images.
-  - `NgOptimizedImage` does not work for inline base64 images.
+Before running or continuing any `devspec` workflow:
 
-## Accessibility Requirements
+1. Read `devspec/adapters/command-registry.md` for the requested command.
+2. Read the canonical Copilot prompt and agent files named in that registry row.
+3. Follow `.github/prompts/PATTERNS.md` for shared workflow, recovery, output, discovery, and recommendation behavior. For diagram generation, also apply `PATTERNS.md#mermaid-visual-quality-pattern` when Mermaid output is selected, `PATTERNS.md#mermaid-internal-naming-and-readability-pattern` when Mermaid output is selected, `PATTERNS.md#svg-output-pattern` when SVG output is selected or defaulted, and `PATTERNS.md#excluded-diagram-families` (do not generate or queue excluded families such as `architecture-beta`; use the portable alternative).
+4. Recover from existing `devspec/` artifacts before relying on memory.
+5. Preserve required inputs, output artifacts, status values, gates, handoff order, and recovery behavior.
 
-- It MUST pass all AXE checks.
-- It MUST follow all WCAG AA minimums, including focus management, color contrast, and ARIA attributes.
+## Structured Questions
 
-### Components
+Follow `.github/prompts/PATTERNS.md#interactive-question-pattern` for user questions. Show interactive multiple-choice options; if the host cannot render them, render the identical options as text and accept one option label or `Custom Answer`. Ask one question at a time, include an example for every option and `Custom Answer`, and show exactly one recommended option with its justification. Preserve question intent, option labels and examples, the `Custom Answer` entry or response, the recommended option and justification, and the continuation condition in the relevant `Resume State` or `Workflow State` before waiting for input.
 
-- Keep components small and focused on a single responsibility
-- Use `input()` and `output()` functions instead of decorators
-- Use `model()` for two-way bound properties with `[(prop)]` syntax instead of pairing `input()` with `output()`
-- Use `computed()` for derived state
-- Use `linkedSignal()` for state derived from multiple reactive sources that must stay synchronized
-- Prefer inline templates for small components
-- Prefer Signal Forms (`@angular/forms/signals`) for new forms. They are stable in Angular v22+ and provide signal-based state, type-safe field access, and schema-based validation
-- When not using Signal Forms, prefer Reactive forms instead of Template-driven ones
-- Do NOT use `ngClass`, use `class` bindings instead
-- Do NOT use `ngStyle`, use `style` bindings instead
-- Do NOT import `CommonModule`, import only the directives and pipes the template uses, such as `AsyncPipe` or `DatePipe`
-- When using external templates/styles, use paths relative to the component TS file.
+## No Intent Drift
 
-## State Management
+Do not change the original intent of `.github/prompts/*.prompt.md` or `.github/agents/*.agent.md`.
 
-- Use signals for local component state
-- Use `computed()` for derived state
-- Keep state transformations pure and predictable
-- Do NOT use `mutate` on signals, use `update` or `set` instead
+An adapter or agent must not:
 
-## Templates
+- change command purpose
+- skip required input or confirmation
+- write a different artifact set
+- relax readiness, review, access, or security gates
+- invent status values outside `devspec/glossary.md`
+- recommend unregistered commands
+- hide platform limitations by changing workflow semantics
 
-- Keep templates simple and avoid complex logic
-- Use native control flow (`@if`, `@for`, `@switch`) instead of `*ngIf`, `*ngFor`, `*ngSwitch`
-- Use the async pipe to handle observables
-- Do not assume globals like (`new Date()`) are available.
+Record platform gaps in `devspec/adapters/compatibility-matrix.md` when needed.
 
-## Services
+## Required Flows
 
-- Design services around a single responsibility
-- Use the `providedIn: 'root'` option for singleton services
-- Prefer the `@Service` decorator over `@Injectable({providedIn: 'root'})` for new singleton services (Angular v22+)
-- Use the `inject()` function instead of constructor injection
+New repository foundation:
+
+```text
+/devspec.projectcontext
+/devspec.techstack
+/devspec.codebase-structure
+/devspec.coding-standards
+/devspec.rules
+```
+
+Existing repository foundation:
+
+```text
+/devspec.extract
+/devspec.projectcontext
+/devspec.techstack
+/devspec.codebase-structure
+/devspec.coding-standards
+/devspec.rules
+```
+
+Work-item story lifecycle:
+
+```text
+/devspec.story
+/devspec.finalize
+/devspec.tasks
+/devspec.implement
+/devspec.review
+```
+
+Use `/devspec.clarify` only when work-item intake or finalization records a blocking question. For a missed related requirement after finalization, use `/devspec.changerequest` and continue through `/devspec.finalize`, `/devspec.tasks`, `/devspec.implement`, and `/devspec.review`; it appends CR-scoped rows to existing work-item artifacts. Use `/devspec.diagram` for diagram work after relevant context exists.
+
+## Enterprise Validation
+
+Use `devspec/adapters/validation-flows.md` as the acceptance checklist for new repository, existing repository, story lifecycle, and cross-tool recovery validation.
+
+## Gemini and Antigravity Notes
+
+- Gemini CLI reads `GEMINI.md`, which imports this file and maps native `/devspec:*` commands to canonical `/devspec.*` workflow intent.
+- Google Antigravity reads workspace rules and skills from `.agents/`; native skills use `/devspec-*` names while preserving canonical `/devspec.*` command behavior.
+- Gemini and Antigravity adapters must document platform-specific permission, sandbox, telemetry, and command-name limitations without changing `devspec` semantics.
