@@ -1,10 +1,16 @@
+import '@angular/compiler';
+
 import { TestBed } from '@angular/core/testing';
+import { provideRouter, Router } from '@angular/router';
+import { beforeEach, describe, expect, it } from 'vitest';
 import { App } from './app';
+import { routes } from './app.routes';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
+      providers: [provideRouter(routes)],
     })
       .compileComponents();
   });
@@ -17,15 +23,25 @@ describe('App', () => {
 
   it('should render title', async () => {
     const fixture = TestBed.createComponent(App);
+    const router = TestBed.inject(Router);
+
+    await router.navigateByUrl('/login');
     await fixture.whenStable();
+    fixture.detectChanges();
+
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Aesthetic Clinic');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Welcome back');
   });
 
-  it('should render baseline guidance', async () => {
+  it('should render the login route by default', async () => {
     const fixture = TestBed.createComponent(App);
+    const router = TestBed.inject(Router);
+
+    await router.navigateByUrl('/');
     await fixture.whenStable();
+    fixture.detectChanges();
+
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('main')?.textContent).toContain('minimal Angular shell');
+    expect(compiled.textContent).toContain('Sign in to continue');
   });
 });
